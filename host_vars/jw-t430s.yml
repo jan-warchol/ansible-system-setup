@@ -1,4 +1,4 @@
-ansible_become_password: "{{ lookup('passwordstore', 'jw-t430s-system-user') }}"
+# ansible_become_password: "{{ lookup('passwordstore', 'jw-t430s-system-user') }}"
 dist_override: bionic
 dist_override_release: 18.04
 
