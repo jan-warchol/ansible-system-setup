@@ -167,6 +167,8 @@
     - name: Install latest versions of apt packages
       apt:
         name:
+          - enigmail
+          - thunderbird
           - baobab
           - dconf-cli
           - dconf-editor   # desktop environment configuration
