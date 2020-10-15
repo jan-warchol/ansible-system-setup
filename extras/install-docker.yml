@@ -44,7 +44,9 @@
         pkg: docker-ce
 
       # see https://jvns.ca/blog/2017/11/20/groups/ for info about group membership
-    - name: allow running docker without sudo (re-login to apply session-wide)
+    - name: >
+        allow {{ ansible_user }} to run docker without sudo (re-login to apply
+        session-wide)
       user:
         name: "{{ ansible_user }}"
         groups: docker
